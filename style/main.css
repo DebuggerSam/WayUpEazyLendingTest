@@ -1,0 +1,458 @@
+/* font-family: 'Montserrat', sans-serif; */
+/* font-family: 'Open Sans', sans-serif; */
+
+/* span #48ed8e */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #201b2d;
+  font-size: 15px;
+}
+
+li {
+  list-style: none;
+}
+
+div,
+p,
+input,
+button,
+form,
+span,
+a,
+ul,
+li {
+  box-sizing: border-box;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.header {
+  background: -webkit-linear-gradient(135deg, rgb(71, 62, 95), rgb(43, 34, 64));
+  background: -moz-linear-gradient(135deg, rgb(71, 62, 95), rgb(43, 34, 64));
+  background: linear-gradient(135deg, rgb(71, 62, 95), rgb(43, 34, 64));
+  height: 800px;
+}
+
+.logo {
+  margin-top: 48px;
+  width: 100px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.header__title {
+  padding-top: 176px;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  width: 490px;
+  font-weight: 900;
+  font-size: 36px;
+}
+
+.header_span_green {
+  color: #48ed8e;
+}
+
+.header_suptitle {
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  padding-top: 67px;
+  font-weight: 400;
+  font-size: 15px;
+  width: 490px;
+}
+
+.header__button {
+  width: 225px;
+  height: 60px;
+  background-color: #ed9619;
+  border: none;
+  border-radius: 5.2em;
+  font-size: 15px;
+  font-weight: 900;
+  margin-top: 68px;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  transition: 0.7s linear;
+  cursor: pointer;
+}
+
+.header__button:hover {
+  background-color: #e64210;
+}
+
+.header__desktop {
+  position: relative;
+  bottom: 448px;
+  left: 600px;
+}
+
+/* Learn */
+
+.learn {
+  height: 380px;
+}
+
+.learn_question {
+  margin-top: 40px;
+  padding: 80px 0;
+  font-weight: 900;
+}
+
+.block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.learn_icon {
+  position: absolute;
+  padding-right: 20px;
+}
+
+.learn_head {
+  padding-left: 94px;
+  padding-bottom: 14px;
+}
+
+.learn_txt {
+  padding-left: 94px;
+  width: 380px;
+}
+
+/* Mail */
+
+.mail {
+  height: 480px;
+  background-color: #efecf4;
+}
+
+.mail_text {
+  margin-bottom: -30px;
+}
+
+.input__mail {
+  width: 480px;
+  height: 58px;
+  border: 1px solid #cac4d9;
+  border-radius: 5.5rem;
+  outline: none;
+  margin-right: 12px;
+  text-align: justify;
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+  padding-left: 38px;
+}
+
+.container-mail {
+  padding-top: 150px;
+}
+
+/* Footer */
+
+.footer {
+  height: 100px;
+  background-color: #201b2d;
+}
+
+.footer_text {
+  color: #d4cee3;
+  text-align: center;
+  line-height: 100px;
+}
+
+/* Responsive */
+
+/* 992px - 1200px */
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 960px;
+  }
+  .header__desktop {
+    position: relative;
+    bottom: 400px;
+    left: 500px;
+    width: 380px;
+  }
+
+  .header__title {
+    font-size: 30px;
+  }
+  .header__button {
+    width: 208px;
+    height: 56px;
+  }
+  .learn_icon {
+    width: 62px;
+  }
+
+  .learn_head {
+    font-size: 15px;
+  }
+  .learn_txt {
+    font-size: 12px;
+    width: 320px;
+  }
+
+  .learn_question {
+    font-size: 21px;
+  }
+}
+
+/* 768px - 992px */
+@media screen and (max-width: 992px) {
+  .container {
+    width: 768px;
+  }
+
+  .header {
+    height: 700px;
+  }
+
+  .header__desktop {
+    position: relative;
+    bottom: 320px;
+    left: 440px;
+    width: 280px;
+  }
+
+  .logo {
+    margin-left: 30px;
+  }
+
+  .header__title {
+    font-size: 25px;
+    margin-left: 30px;
+  }
+  .header__button {
+    width: 188px;
+    height: 46px;
+    margin-left: 30px;
+  }
+
+  .header_suptitle {
+    margin-left: 30px;
+    margin-top: -39px;
+    font-size: 12px;
+    width: 280px;
+  }
+
+  .learn_icon {
+    width: 54px;
+    margin-left: 30px;
+  }
+
+  .learn_head {
+    font-size: 13px;
+    padding-bottom: 11px;
+  }
+  .learn_txt {
+    font-size: 10px;
+    width: 320px;
+  }
+
+  .learn_question {
+    font-size: 18px;
+    padding: 0;
+    text-align: center;
+  }
+
+  .block {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+
+  li {
+    margin-top: 28px;
+  }
+
+  .input__mail {
+    width: 350px;
+    height: 48px;
+    margin-left: 60px;
+    margin-right: -20px;
+  }
+
+  .mail_text {
+    text-align: center;
+    color: #98af72;
+  }
+}
+
+/* 576px - 768px */
+@media screen and (max-width: 768px) {
+  .container {
+    width: 576px;
+  }
+
+  .logo {
+    width: 70px;
+    margin-left: 60px;
+  }
+
+  .header {
+    height: 450px;
+  }
+
+  .header__desktop {
+    position: relative;
+    bottom: 179px;
+    left: 348px;
+    width: 170px;
+  }
+  .header__title {
+    font-size: 16px;
+    margin-left: 60px;
+    padding-top: 80px;
+  }
+
+  .header_suptitle {
+    margin-left: 60px;
+    margin-top: -56px;
+    font-size: 8px;
+    width: 239px;
+  }
+
+  .header__button {
+    margin-left: 60px;
+    margin-top: 25px;
+    width: 82px;
+    height: 28px;
+    font-size: 8px;
+  }
+
+  .mail {
+    height: 300px;
+  }
+
+  .container-mail {
+    padding-top: 100px;
+  }
+
+  .mail_text {
+    font-size: 12px;
+    margin-bottom: 0;
+  }
+
+  .input__mail {
+    width: 150px;
+    height: 30px;
+    font-size: 10px;
+    margin-left: 160px;
+  }
+
+  .btn__mail {
+    margin-left: 24px;
+  }
+}
+
+/* 320px - 576px */
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 320px;
+  }
+
+  .logo {
+    width: 110px;
+    margin-left: 105px;
+  }
+
+  .header {
+    height: 450px;
+  }
+
+  .header__desktop {
+    display: none;
+  }
+  .header__title {
+    font-size: 16px;
+    margin-left: 60px;
+    padding-top: 80px;
+  }
+
+  .header_suptitle {
+    margin-left: 60px;
+    margin-top: -56px;
+    font-size: 8px;
+    width: 239px;
+  }
+
+  .header__button {
+    margin-left: 60px;
+    margin-top: 25px;
+    width: 82px;
+    height: 28px;
+    font-size: 8px;
+  }
+
+  .learn {
+    height: 320px;
+  }
+
+  .learn_icon {
+    width: 34px;
+    margin-left: 46px;
+  }
+
+  .learn_head {
+    font-size: 11px;
+  }
+  .learn_txt {
+    font-size: 8px;
+    width: 300px;
+  }
+
+  .learn_question {
+    font-size: 18px;
+    padding: 0;
+    text-align: center;
+  }
+
+  .mail {
+    height: 300px;
+  }
+
+  .container-mail {
+    padding-top: 100px;
+  }
+
+  .mail_text {
+    font-size: 12px;
+    margin-bottom: 0;
+  }
+
+  .input__mail {
+    width: 110px;
+    height: 30px;
+    font-size: 7px;
+    padding-left: 8px;
+    margin-left: 70px;
+  }
+
+  .btn__mail {
+    margin-left: 25px;
+  }
+}
